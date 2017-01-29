@@ -37,6 +37,7 @@ footer p{
 	font-family: 'Trebuchet MS', Helvetica, san-serif;
 	background-image: url('BikeShot.jpg');
 	background-size: cover;
+	background-position: 100% 10%;
 	color: #ffffff;
 	height: 550px;
 	text-shadow: 0.25px 0.25px 0.25px #000000;
@@ -44,12 +45,12 @@ footer p{
 
 .jumbotron h2 {
 	color: #ffffff;
-	text-shadow: 0 2px #000000;
+	text-shadow: 0 0.125rem #000000;
 	font-size: 6rem;
 }
 
 .jumbotron h3 {
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
   color: #fff;
 }
 
