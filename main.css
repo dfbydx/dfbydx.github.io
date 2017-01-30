@@ -13,6 +13,7 @@ header h1 {
 header a{
 	padding: 0 20px;
 	margin: 0;
+  text-decoration: none;
 }
 
 header nav{
@@ -33,7 +34,7 @@ footer p{
 
 .jumbotron {
 	display: flex;
-	align-items: left;
+	align-items: center;
 	font-family: 'Trebuchet MS', Helvetica, san-serif;
 	background-image: url('BikeShot.jpg');
 	background-size: cover;
@@ -43,10 +44,23 @@ footer p{
 	text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
+@media(max-width: 767px) {
+  .jumbotron h2 {
+	  color: #ffffff;
+	  text-shadow: 0 0.125rem #000000;
+	  font-size: 3rem;
+  }
+  
+  .jumbotron h3 {
+    margin: 0 0 0.75rem;
+    color: #fff;
+  }
+}
+
 .jumbotron h2 {
-	color: #ffffff;
-	text-shadow: 0 0.125rem #000000;
-	font-size: 6rem;
+ color: #ffffff;
+ text-shadow: 0 0.125rem #000000;
+ font-size: 6rem;
 }
 
 .jumbotron h3 {
