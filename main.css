@@ -40,7 +40,7 @@ footer p{
 	background-size: cover;
 	background-position: 100% 10%;
 	color: #ffffff;
-	height: 550px;
+  /*height: 550px;*/
 	text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -90,6 +90,13 @@ a {
 .col-md-6 {
   margin: 0 0 30px;
 }
+
+.btn.btn-default {
+  border-radius: 2px;
+  border: 0px;
+  margin: 6px;
+}
+
 .btn.btn-primary {
   border-radius: 2px;
   border: 0px;
