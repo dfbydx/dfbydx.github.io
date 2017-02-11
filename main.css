@@ -1,13 +1,16 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
 body{
-	font-family: 'Roboto',sans-serif;
+	font-family: 100% sans-serif;
 	font-weight: 300;
 }
 
 header {
 	padding: 20px 0;
-}
-
-header h1 {
 }
 
 header a{
@@ -27,16 +30,24 @@ footer .row {
   align-items: center;
 }
 
+
+
 footer p{
 	padding: 100px 0;
 	margin: 0;
 }
 
+footer {
+  margin-bottom: 1em;
+  color: #888;
+	font-size: 1.15em;
+}
+
 .jumbotron {
 	display: flex;
 	align-items: center;
-	font-family: 'Trebuchet MS', Helvetica, san-serif;
-	background-image: url('BikeShot.jpg');
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	background-image: url('img/BikeShot.jpg');
 	background-size: cover;
 	background-position: 100% 10%;
 	color: #ffffff;
@@ -100,25 +111,67 @@ a {
   text-decoration: none;
 }
 
-.crop img {
-  width: 100%;  
-  height: auto;  
+#home {
+	font-size: 3em;
+  text-decoration: none;
+	color: Black;
 }
 
-.crop {
-  height: 400px;
-  /*width: 400px;*/
-  overflow: hidden;
+/* ------------------- Grid -------------------*/
+
+.container {
+  max-width: 50em;
+  width:92%;
+  margin-right: auto;
+  margin-left: auto;
 }
-          
-.col-md-6 {
-  margin: 0 0 30px;
+
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left:  -1%;
+  
 }
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 33.3333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
+}
+
 
 .btn.btn-default {
   border-radius: 2px;
   border: 0px;
   margin: 6px;
+	font-size: 1.15em;
+}
+
+.btn.btn-default:hover {
+  background-color: White;
 }
 
 .btn.btn-primary {
